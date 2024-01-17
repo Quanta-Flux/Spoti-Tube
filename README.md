@@ -58,7 +58,7 @@ Replace `<playlist_link>` with the actual Spotify playlist link.
 
 ```python
 # Example Usage
-python spoti-tube.py https://open.spotify.com/playlist/your_playlist_id
+python spoti-tube.py "https://open.spotify.com/playlist/your_playlist_id"
 ```
 
 2. Let Spoti-Tube handle the rest.
