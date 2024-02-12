@@ -1,128 +1,70 @@
-# Spoti-Tube
+# Getting Started with Create React App
 
-Spoti-Tube is a Python script that allows you to download songs from a given Spotify playlist. By leveraging the Spotify API for playlist information and the pytube library for YouTube integration, Spoti-Tube seamlessly converts your favorite Spotify playlist into a local collection of MP3 files.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Features
+## Available Scripts
 
-- **Easy Setup:** Quickly set up Spoti-Tube by installing the required dependencies and configuring your Spotify API credentials in the `.env` file.
+In the project directory, you can run:
 
-- **Playlist Conversion:** Input your Spotify playlist link, and Spoti-Tube will retrieve the list of songs and search for corresponding MP3s on YouTube.
+### `npm start`
 
-- **Automatic Download:** The script automatically downloads the identified songs in MP3 format to the `music` directory, organized by playlist name.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- **Error Handling:** Spoti-Tube gracefully handles errors during the download process, ensuring a smooth experience even in the face of occasional issues.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### Note:
+### `npm test`
 
-- **Spotify Access Tokens:** For initial usage, you can use my access tokens but to get your own personal access tokens [visit](https://developer.spotify.com/documentation/web-api)
-- **First Use:** While using it for the first time a youtube authentication will be initiated in case of any explicit songs. To authorize your YT account you've to go to the prompted link in the terminal & paste the code prompted in the terminal. This will be a one-time thing only. Also, I'm trying to remove this issue if anyone knows how to resolve this issue kindly contact me
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Enjoy your seamless journey from Spotify playlists to local MP3s with Spoti-Tube!
-## Setup
+### `npm run build`
 
-Before using Spoti-Tube, you need to set up your environment by following these steps:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-1. Clone the repository:
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-   ```bash
-   git clone https://github.com/ky13-troj/Spoti-Tube.git
-   cd spoti-tube
-   ```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-2. Install the required dependencies:
+### `npm run eject`
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-3. Create a `.env` file in the project root directory and add your Spotify API credentials:
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-   ```env
-   CLIENT_ID="your_spotify_client_id"
-   CLIENT_SECRET="your_spotify_client_secret"
-   ```
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-   Replace `your_spotify_client_id` and `your_spotify_client_secret` with your actual Spotify API credentials.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Usage
+## Learn More
 
-### 1. Execution
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Run the Spoti-Tube script by providing the Spotify playlist link as a command-line argument:
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-```bash
-python spoti-tube.py <playlist_link>
-```
+### Code Splitting
 
-Replace `<playlist_link>` with the actual Spotify playlist link.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-```python
-# Example Usage
-python spoti-tube.py "https://open.spotify.com/playlist/your_playlist_id"
-```
+### Analyzing the Bundle Size
 
-2. Let Spoti-Tube handle the rest.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-3. Spoti-Tube will then fetch the playlist information and search for corresponding songs on YouTube.
+### Making a Progressive Web App
 
-4. The script will start downloading the songs in MP3 format to the `music` directory, & create a directory using the playlist name.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-## Notes
+### Advanced Configuration
 
-- Spoti-Tube uses the [pytube](https://github.com/pytube/pytube) library to interact with YouTube and download videos.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-- The downloaded songs will be saved in the `music` directory with the playlist name as a subdirectory.
+### Deployment
 
-- If an error occurs during the download, the script will continue with the next song.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-## Disclaimer
+### `npm run build` fails to minify
 
-Spoti-Tube is intended for personal use and educational purposes only. Ensure compliance with the terms of service of the platforms involved and adhere to local copyright laws.
-
-Please be aware that downloading copyrighted material without permission may violate the terms of service of certain platforms and local copyright laws. Use this script responsibly and only for legal purposes.
-
-
----
-
-Feel free to contribute to the project or report any issues on the [GitHub repository](https://github.com/ky13-troj/spoti-tube).
-
-**Commit Changes:**
-- Implemented object-oriented structure for SpotiTube script in spoti_tube_class.py.
-- Created classes for SpotifyDownloader, PlaylistDownloader, AudioDownloader, and SpotifyPlaylistProcessor.
-- Encapsulated functionalities for Spotify API interaction, playlist details extraction, YouTube queries generation, and audio downloading.
-- Improved modularity, readability, and maintainability of the codebase.
-- Enhanced object-oriented design for SpotiTube script, fostering better code organization.
-
-
-# Future Visions of Spoti-Tube
-
-## 1. **Creation of a Python API:**
-   Transform Spoti-Tube into a robust Python API, allowing users to integrate its functionality into their own projects and applications. The API can expose endpoints for playlist conversion and song downloads, enabling developers to incorporate Spoti-Tube's features seamlessly.
-
-## 2. **Development of a Mobile App:**
-   Create a user-friendly mobile app for both iOS and Android platforms, providing a convenient interface for users to interact with Spoti-Tube. The app can offer features such as playlist input, download progress tracking, and local library management.
-
-## 3. **Cross-Platform Compatibility:**
-   Extend Spoti-Tube's reach by ensuring compatibility with various operating systems. Besides Android, consider developing versions for iOS, Windows, and macOS, catering to a broader audience and enhancing user accessibility.
-
-## 4. **User Accounts and Cloud Integration:**
-   Implement user account functionality to enable personalized experiences. Users can save their playlists, track download history, and synchronize their local libraries with cloud storage services like Google Drive or Dropbox for seamless access across devices.
-
-## 5. **Enhanced Search and Metadata Handling:**
-   Improve the accuracy of song searches by implementing advanced algorithms and leveraging additional metadata. Enhance the user experience by providing more information about the downloaded songs, such as artist details, album art, and lyrics.
-
-## 6. **Real-Time Collaboration:**
-   Introduce collaborative playlist features, allowing users to share playlists with others. Real-time updates and notifications can inform users when new songs are added or when friends are listening to the same playlist.
-
-## 7. **Integration with Music Streaming Services:**
-   Explore partnerships or integrations with other music streaming services beyond Spotify. This could include popular platforms like Apple Music, Deezer, or YouTube Music, offering users more flexibility in choosing their preferred source for song downloads.
-
-## 8. **Integration with Smart Devices:**
-   Explore integration with smart home devices and virtual assistants. Users could use voice commands to initiate playlist downloads or request information about their downloaded library.
-
-## 9. **Continuous Updates and Community Contributions:**
-    Foster an active open-source community around Spoti-Tube. Encourage contributions, bug fixes, and feature suggestions from the community to keep the project evolving and aligned with user needs.
-
-As Spoti-Tube evolves, these future visions aim to enhance functionality, user experience, and accessibility, making it a versatile and indispensable tool for music enthusiasts.
-
-Feel free to contact me via [Instagram](https://www.instagram.com/sarkar.sayan01/)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
